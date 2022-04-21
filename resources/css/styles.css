@@ -1,0 +1,130 @@
+/* Universal styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #d9d0a9;
+    color: #19435b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+p, ul, li {
+    font-size: 28px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+.left {
+    text-align: left;
+}
+
+/* Header */
+.banner {
+        background-color: #19435b;
+        color: #b99c48;
+        margin: 10px;
+        padding: 10px;
+}
+
+#profile {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 150px;
+}
+/* Nav bar */
+    nav {
+        text-align: left;
+    }
+
+    .navbar li {
+        display: inline;
+        padding: 0px 20px;
+        cursor: pointer;
+    }
+
+/* Section */
+.middle {
+    padding: 0px 20px;
+}
+
+#styleguidehead {
+    margin-bottom: 5px;
+}
+
+.colors, .fonts, .textsyles {
+   padding: 10px 0px;
+}
+.box {
+    display: inline-block;
+    padding: 10px 50px;
+    line-height: 2;
+    margin: 0px 50px;
+    border: 1px solid #19435b;
+}
+
+.box2 {
+    display: inline-block;
+    padding: 10px;
+    line-height: 1.5;
+    margin: 0px 15px;
+    border: 1px solid #19435b;
+    height: 350px;
+    overflow: scroll;
+}
+
+
+/* Colors */
+#navy {
+    color: #d9d0a9;
+    background-color: #19435b;
+}
+
+#beige {
+    color:#19435b;
+    background-color: #d9d0a9;
+}
+
+#mustard {
+    color: #19435b;
+    background-color: #b99c48;
+}
+
+/* Text styles */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+.sourcepro {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 2;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+}
+.footer li {
+    display: inline;
+    padding: 0px 80px;
+}
