@@ -7,6 +7,7 @@ body {
     color: #19435b;
     text-align: center;
     box-sizing: border-box;
+    font-size: 28px;
 }
 
 h1 {
@@ -34,6 +35,11 @@ p, ul, li {
 
 .left {
     text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #19435b;
 }
 
 /* Header */
@@ -93,6 +99,62 @@ p, ul, li {
     overflow: scroll;
 }
 
+.image {
+    position: relative;
+    width: 200px;
+}
+
+.image_img {
+    display: block;
+    width: 100%;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -ms-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    backdrop-filter: blur(5px);
+}
+
+/* targets every direct child of image_overlay */
+.image_overlay > * {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transition: transform 0.25s;
+    -webkit-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    -ms-transition: transform 0.25s;
+    -o-transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover > * {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
 
 /* Colors */
 #navy {
@@ -121,10 +183,8 @@ p, ul, li {
     line-height: 2;
 }
 /* Footer */
-.footer {
-    padding: 20px;
-}
-.footer li {
-    display: inline;
-    padding: 0px 80px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
 }
