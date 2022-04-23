@@ -99,9 +99,21 @@ a {
     overflow: scroll;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0px;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .image {
     position: relative;
-    width: 200px;
+    width: 300px;
 }
 
 .image_img {
@@ -183,8 +195,4 @@ a {
     line-height: 2;
 }
 /* Footer */
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 20px;
-}
+
